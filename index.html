@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="gallery-container">
+    <div class="gallery-grid">
+      <div class="gallery-item" onclick="openLightbox(0)">
+        <img src="images/img1.jpg" alt="Gallery Image 1">
+      </div>
+      <div class="gallery-item" onclick="openLightbox(1)">
+        <img src="images/img2.jpg" alt="Gallery Image 2">
+      </div>
+      <div class="gallery-item" onclick="openLightbox(2)">
+        <img src="images/img3.jpg" alt="Gallery Image 3">
+      </div>
+      <div class="gallery-item" onclick="openLightbox(3)">
+        <img src="images/img4.jpg" alt="Gallery Image 4">
+      </div>
+      <div class="gallery-item" onclick="openLightbox(4)">
+        <img src="images/img5.jpg" alt="Gallery Image 5">
+      </div>
+      <div class="gallery-item" onclick="openLightbox(5)">
+        <img src="images/img6.jpg" alt="Gallery Image 5">
+      </div>
+      <div class="gallery-item" onclick="openLightbox(6)">
+        <img src="images/img7.jpg" alt="Gallery Image 5">
+      </div>
+      <div class="gallery-item" onclick="openLightbox(7)">
+        <img src="images/img8.jpg" alt="Gallery Image 5">
+      </div>
+    </div>
+  </div>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <img id="lightbox-image" class="lightbox-image" alt="Large Preview">
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
